@@ -1,0 +1,49 @@
+
+    <h1>Сортировка пузырьком</h1>
+    <div class="content">    	
+    	<div class="row justify-content-center">
+    		<div class="col-auto">
+    			<h2>Введите данные для сортировки</h2>
+    			<form method="post" action="/inputdata">
+    			      		<label>Массив</label>
+    			      	<br />
+    			      		<input id="input-sort" type="number" name="inputmassive" />
+    			      	<br/><br/>      
+    			      		<label>Нажмите для сортировки</label>
+    			      	<br/>      
+    			      		<input id="btn_save" type="submit" value="Сортировка" />
+    			      	<br/>
+    			      		
+    			</form>
+    			
+    			    <form method="post" action="/savedata">
+    			<label>Сортированный массив:</label>
+    			      	<br/>
+    			      		<strong><p><textarea name="output_sort" id="" cols="30" rows="10">{{sort_data}}</textarea></p></strong>
+    			<label>Нажмите для сохранения в БД</label><br />      
+    			      	<input id="btn_save" type="submit" value="Сохранение" /><br/><br/>
+    			      	<strong><p>{{message}}</p></strong>
+    			      
+    			    </form>
+    			    <script>
+    			
+    			
+    			    </script>
+    		</div>
+    		<div class="col-auto">
+    	<h2>Введите ID сортировки</h2>
+    	<form method="post" action="/requestdata">
+    			      		<label>Массив</label>
+    			      	<br />
+    			      		<input id="request-id" type="number" name="requestid" />
+    			      	<br/><br/>      
+    			      		<label>Нажмите для запроса</label>
+    			      	<br/>      
+    			      		<input id="btn_request_id" type="submit" value="Запрос" />
+    			      	<br/><br/>
+    			      		<strong><p>{{message2}}</p></strong>
+    			</form>
+    </div>
+    	</div>
+    </div>
+    
