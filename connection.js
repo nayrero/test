@@ -15,7 +15,7 @@ sequelize
   .authenticate()
   .then(() => console.log('Connected.'))
   .catch((err) => console.error('Connection error: ', err));
-
+//-----------синхронизация с БД-----------------
 /*sequelize.sync().then(result=>{
   console.log(result);
 })
